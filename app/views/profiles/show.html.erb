@@ -48,10 +48,10 @@
     <div class="all-pois">
 
       <% @favorites_pois.each do |favorite_poi| %>
-        <%= link_to poi_path(favorite_poi.poi) do %>
-          <div class="my-poi-image mb-3" style="background-image: linear-gradient(360deg, rgba(39, 76, 119, 0.50) -0.45%, rgba(255, 255, 255, 0) 97.73%), url('<%= cl_image_path favorite_poi.poi.photos.last.key %>');">
-            <div class="my-poi-name"><%= favorite_poi.poi.name %></div> 
-            <div class="my-poi-category"><%= favorite_poi.poi.category %></div> 
+        <%= link_to poi_path(favorite_poi) do %>
+          <div class="my-poi-image mb-3" style="background-image: linear-gradient(360deg, rgba(39, 76, 119, 0.50) -0.45%, rgba(255, 255, 255, 0) 97.73%), url('<%= cl_image_path favorite_poi.photos.last.key %>');">
+            <div class="my-poi-name"><%= favorite_poi.name %></div> 
+            <div class="my-poi-category"><%= favorite_poi.category %></div> 
           </div>
         <% end %>
 

@@ -1,10 +1,9 @@
 .parent-profile {
   display: grid;
   grid-template-columns: 20% 15% 15% 15% 15% 20%;
-  grid-template-rows: 12% 20% 20% 20% 27%;
+  grid-template-rows: 120px 120px 20% 20% 40%;
   grid-column-gap: 15px;
   grid-row-gap: 15px;
-
   margin-top: 40px;
   margin-left: 25px;
   margin-right: 25px;
@@ -38,9 +37,6 @@
     grid-area: 1 / 4 / 3 / 5;
     border-radius: 10px;
     background-color: white;
-    .his-username {
-
-    }
   }
 
   .les-villes {
@@ -67,7 +63,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-      } h4 {
+      } 
+      h4 {
         color: white;
         padding: 3rem;
       }
